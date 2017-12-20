@@ -14,6 +14,7 @@ public class Block{
 		index = 0;
 		date = new Date();
 		this.data = data;
+		prevHash = "";
 	}
 
 	public Block(String data, int ind, String preHash){//blocks after genesis
@@ -24,8 +25,8 @@ public class Block{
 	}
 
 	//accessors
-	public Date getDate(){
-		return date;
+	public String getDate(){
+		return date.toString();
 	} 
 
 	public int getIndex(){
