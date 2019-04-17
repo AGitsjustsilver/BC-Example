@@ -53,7 +53,7 @@ public class Block{
 	}
 
 	public boolean isValidHash(String pHash){
-		char[] c = {pHash.charAt(0),pHash.charAt(1)/*,pHash.charAt(2),pHash.charAt(3)*/};
+		char[] c = {pHash.charAt(0)/*,pHash.charAt(1),pHash.charAt(2),pHash.charAt(3)*/};
 		for(char i : c){
 			if (i != '0') {
 				return false;
